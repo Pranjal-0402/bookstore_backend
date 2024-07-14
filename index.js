@@ -26,7 +26,10 @@ try {
 } catch (error) {
     console.log("Error: ", error);
 }
-
+app.get("/",(req,res)=>{
+    res.send("Hello World");
+}
+);
 // defining routes
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
